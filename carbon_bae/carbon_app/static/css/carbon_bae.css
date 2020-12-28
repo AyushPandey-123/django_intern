@@ -1,0 +1,42 @@
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.myclass {
+  align-items: center;
+  border: 2px solid black;
+  width: inherit;
+  padding: 30px;
+  margin: 50px;
+  box-shadow: 5px 10px #888888;
+}
+
+h5{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.myclass1 {
+  font-size: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.myimage {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.myimage2{
+  border: 3px solid black;
+  height: 300px;
+  width: 350px;
+  margin-left: 375px;
+  margin-top: 50px;
+}
+
+.classl{
+  color: white;
+}

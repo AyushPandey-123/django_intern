@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+{% if user.is_authenticated %}
+    <p class="myclass1">Welcome {{user.username|upper}} !</p>
+      {% for image in object_list %}
+          <img src="{{image.image_url}}" alt="Please upload an image" class="myimage2">
+          <p>Uploaded on {{image.datetime}}<hr style="width:80%;height:2px;border-width:1px;background-color:gray;">
+      {% empty %}
+          <li>No Image yet.</li>
+      {% endfor %}
+{%else%}
+    <h5>Welcome User, please Log-In or Sign-Up <br>
+      You can also Log-In via Google Account !</h5>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block body %}
+    {% if user.is_authenticated %}
+    <div class="container myclass">
+            {% if user.image_url == "" %}
+              <p>Image Not Avilable <br>Please Upload an image</p>
+            {% else %}
+              <img src="{{user.image_url}}" alt="Image not available" width="150" height="100" class="myimage"><br><br>
+            {% endif %}
+              <p>Welcome, <b>{{ user.username|upper }}</b> !</p>
+            {% if user.bio == "" %}
+                <p><b>Bio:</b> Not available, Please add your bio</p>
+            {% else %}
+                <p><b>Bio:</b> {{user.bio}}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+          <a class="btn btn-primary btn-md" href="{% url 'user_create' %}">Update Info</a>
+{% endblock %}
