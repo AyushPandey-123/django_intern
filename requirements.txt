@@ -21,3 +21,4 @@ sqlparse
 urllib3==1.26.2
 whitenoise==5.2.0
 wincertstore==0.2
+django-crispy-forms
