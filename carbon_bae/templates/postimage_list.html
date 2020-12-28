@@ -6,7 +6,9 @@
           <img src="{{image.image_url}}" alt="Please upload an image" class="myimage2">
           <p>Uploaded on {{image.datetime}}<hr style="width:80%;height:2px;border-width:1px;background-color:gray;">
       {% empty %}
-          <center>No Images yet.</center>
+          <center>No Images yet,Please Upload an Image<br>
+          </center>
+
       {% endfor %}
 {%else%}
     <h5>Welcome User, please Log-In or Sign-Up <br>
