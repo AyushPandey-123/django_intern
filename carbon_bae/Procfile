@@ -1,1 +1,1 @@
-web: gunicorn carbon_bae.wsgi --log-file -
+web: gunicorn carbon_bae.wsgi 
